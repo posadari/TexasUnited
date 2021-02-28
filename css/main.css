@@ -7,6 +7,7 @@ body {
 
 ul {
   list-style-type: none;
+  text-decoration: none;
   margin: 0;
   padding: 0;
 }
@@ -47,5 +48,35 @@ header ul {
 header ul a {
   display: block;
   padding: 0 1em;
+}
+
+.hero {
+  background: #457A9F;
+  color: white;
+  text-align: center;
+  padding: 4em;
+}
+
+.hero-design {
+  display: none;
+}
+
+.to-scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 200px;
+  font-weight: bold;
+  color: #FD9C2A;
+}
+
+section {
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.shelters {
+  position: relative;
 }
 /*# sourceMappingURL=main.css.map */
