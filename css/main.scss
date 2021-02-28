@@ -43,8 +43,33 @@ header {
             padding: 0 1em;
         }
     }
-    
+}
 
+.hero {
+   background: #457A9F;
+   color: white;
+   text-align: center;
+   padding: 4em;
+}
 
+.hero-design {
+    display: none;
+}
+
+.to-scroll {
+    display: flex;
+    margin: 0 auto;
+    width: 200px;
+    font-weight: bold;
+    color: #FD9C2A;
+}
+
+section {
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.shelters {
+    position: relative;
 }
 
