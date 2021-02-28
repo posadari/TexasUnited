@@ -2,18 +2,63 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href=main.css">
+    <link rel="stylesheet" href=main.css>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Texans United</title>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDptjBZSOZ2BtKhnQS-mV8M-4-axwxgX8&callback=initMap"
+    type="text/javascript"></script>
+
+    <!-- HEIGHT AND WIDTH OF MAP-->
+    <style type="text/css">
+    
+        #map {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+
+    <script type="text/javascript">
+    
+            x = navigator.geolocation;
+            x.getCurrentPosition(sucess, failure);
+
+            function sucess(position) 
+            {
+                var myLat = position.coords.latitude;
+                var myLong = position.coords.longitude;
+
+                var coords = new google.maps.LatLng(myLat, myLong);
+
+                var mapOptions = {
+                    zoom: 9,
+                    center: coords,
+                    mapTypeId: google.maps.mapTypeId.ROADMAP
+                }
+
+                var map = new google.maps.Map(documment.getElementById("map"), mapOptions);
+                var marker = new google.maps.Marker({maps: map, position:coords});
+            }
+            function failure() {}
+    </script>
 </head>
 
-    <h1> is taco tuesday boys </h1>
-
 <body>
-    
-</body>
+     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+     <!-- Include all compiled plugins (below), or include individual files as needed -->
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+    <div id="map"></div>
+
+
+
+    </body>
+
+
+
 </html>
