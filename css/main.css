@@ -75,6 +75,10 @@ h1{
   background: rgba(69, 122, 159, 0.8);
 }
 
+.subtitle {
+  
+}
+
 .to-scroll {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -102,21 +106,23 @@ section {
   font-size: 1.3em;
 }
 
-.shelter-description {
-  text-align: left;
+.shelter-description, .bank-description  {
+  text-align: center;
   color: black;
+  font-weight: bold;
   margin-bottom: 3em;
-  font-size: .9em;
+  font-size: 1.2em;
   line-height: 1.8em;
   font-weight: 500;
 }
 
-.bank-description {
-  text-align: left;
-  color: black;
-  margin-bottom: 3em;
-  font-size: .9em;
-  line-height: 1.8em;
-  font-weight: 500;
+.shelter {
+  width: 60%;
+  height: auto;
+}
+
+.food {
+  width: 55%;
+  height: auto;
 }
 /*# sourceMappingURL=main.css.map */
