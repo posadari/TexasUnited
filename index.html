@@ -14,14 +14,42 @@
     type="text/javascript"></script>
 
     <!-- HEIGHT AND WIDTH OF MAP-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <style type="text/css">
-    
-        #map {
-            width: 500px;
-            height: 500px;
-        }
-    </style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
 
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script>
+      let map;
+
+      function initMap() {
+        var myLat = position.coords.latitude;
+                var myLong = position.coords.longitude;
+
+                var coords = new google.maps.LatLng(myLat, myLong);
+
+                var mapOptions = {
+                    zoom: 9,
+                    center: coords,
+                    mapTypeId: google.maps.mapTypeId.ROADMAP
+                }
+
+                var map = new google.maps.Map(documment.getElementById("map"), mapOptions);
+                var marker = new google.maps.Marker({maps: map, position:coords});
+      }
+    </script>
+    <!--
     <script type="text/javascript">
     
             x = navigator.geolocation;
@@ -44,7 +72,7 @@
                 var marker = new google.maps.Marker({maps: map, position:coords});
             }
             function failure() {}
-    </script>
+    </script> -->
 </head>
 
 <body>
