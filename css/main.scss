@@ -16,7 +16,7 @@ a {
     text-decoration: none;
 }
 
-.nav-containter {
+.nav-container {
     background: #044B7F;
 
     a {
@@ -65,6 +65,7 @@ header {
 }
 
 section {
+    font-family: 'Poppins';
     padding: 4em 2em;
     text-align: center;
 }
@@ -72,4 +73,31 @@ section {
 .shelters {
     position: relative;
 }
+
+.subtitle {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .2em;
+    font-size: 1.3em;
+}
+
+.shelter-description {
+    text-align: left;
+    color: black;
+    margin-bottom: 3em;
+    font-size: .9em;
+    line-height: 1.8em;
+    font-weight: 500;
+}
+
+.bank-description {
+    text-align: left;
+    color: black;
+    margin-bottom: 3em;
+    font-size: .9em;
+    line-height: 1.8em;
+    font-weight: 500;
+}
+
+
 
