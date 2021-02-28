@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 body {
   height: 100vh;
+  background: #d0dada;
   margin: 0;
   font-family: 'Poppins', 'arial';
 }
@@ -126,4 +127,11 @@ section {
   width: 55%;
   height: auto;
 }
+
+.plumbing {
+  width: 55%;
+  height: auto;
+}
+
+
 /*# sourceMappingURL=main.css.map */
