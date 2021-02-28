@@ -76,6 +76,7 @@ h1{
 }
 
 .subtitle {
+  color: #FD9C2A;
   
 }
 
@@ -111,7 +112,7 @@ section {
   color: black;
   font-weight: bold;
   margin-bottom: 3em;
-  font-size: 1.2em;
+  font-size: 1.0em;
   line-height: 1.8em;
   font-weight: 500;
 }

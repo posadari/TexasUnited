@@ -75,6 +75,7 @@ section {
 }
 
 .subtitle {
+    color:#FD9C2A;
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: .2em;
@@ -98,6 +99,8 @@ section {
     line-height: 1.8em;
     font-weight: 500;
 }
-
-
-
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
