@@ -50,14 +50,29 @@ header ul a {
 }
 
 .hero {
-  background: #457A9F;
-  color: white;
-  text-align: center;
-  padding: 4em;
+  height: 100wh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url(../images/pexels-ryan-3003935.jpg);
 }
 
-.hero-design {
-  display: none;
+h1{
+  text-align:center;
+  color:rgb(253, 156, 42);
+  font-size: 5em;
+  font-family: 'Poppins';
+}
+
+.box {
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-5%, -50%);
+  width: 770px;
+  height: 650px;
+  background: rgba(69, 122, 159, 0.8);
 }
 
 .to-scroll {
