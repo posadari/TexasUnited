@@ -10,69 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Texans United</title>
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDptjBZSOZ2BtKhnQS-mV8M-4-axwxgX8&callback=initMap"
-    type="text/javascript"></script>
-
-    <!-- HEIGHT AND WIDTH OF MAP-->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <style type="text/css">
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-      }
-
-      /* Optional: Makes the sample page fill the window. */
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
-    <script>
-      let map;
-
-      function initMap() {
-        var myLat = position.coords.latitude;
-                var myLong = position.coords.longitude;
-
-                var coords = new google.maps.LatLng(myLat, myLong);
-
-                var mapOptions = {
-                    zoom: 9,
-                    center: coords,
-                    mapTypeId: google.maps.mapTypeId.ROADMAP
-                }
-
-                var map = new google.maps.Map(documment.getElementById("map"), mapOptions);
-                var marker = new google.maps.Marker({maps: map, position:coords});
-      }
-    </script>
-    <!--
-    <script type="text/javascript">
     
-            x = navigator.geolocation;
-            x.getCurrentPosition(sucess, failure);
-
-            function sucess(position) 
-            {
-                var myLat = position.coords.latitude;
-                var myLong = position.coords.longitude;
-
-                var coords = new google.maps.LatLng(myLat, myLong);
-
-                var mapOptions = {
-                    zoom: 9,
-                    center: coords,
-                    mapTypeId: google.maps.mapTypeId.ROADMAP
-                }
-
-                var map = new google.maps.Map(documment.getElementById("map"), mapOptions);
-                var marker = new google.maps.Marker({maps: map, position:coords});
-            }
-            function failure() {}
-    </script> -->
 </head>
 
 <body>
@@ -82,7 +20,10 @@
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 
     <div id="map"></div>
-
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDptjBZSOZ2BtKhnQS-mV8M-4-axwxgX8&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
 
 
     </body>
