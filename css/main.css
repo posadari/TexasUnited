@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 body {
   height: 100vh;
+  background: #d0dada;
   margin: 0;
   font-family: 'Poppins', 'arial';
 }
 
 ul {
   list-style-type: none;
-  text-decoration: none;
   margin: 0;
   padding: 0;
 }
@@ -16,11 +16,11 @@ a {
   text-decoration: none;
 }
 
-.nav-containter {
+.nav-container {
   background: #044B7F;
 }
 
-.nav-containter a {
+.nav-container a {
   color: white;
 }
 
@@ -51,14 +51,34 @@ header ul a {
 }
 
 .hero {
-  background: #457A9F;
-  color: white;
-  text-align: center;
-  padding: 4em;
+  height: 100wh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url(../images/pexels-ryan-3003935.jpg);
 }
 
-.hero-design {
-  display: none;
+h1{
+  text-align:center;
+  color:rgb(253, 156, 42);
+  font-size: 5em;
+  font-family: 'Poppins';
+}
+
+.box {
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-5%, -50%);
+  width: 770px;
+  height: 650px;
+  background: rgba(69, 122, 159, 0.8);
+}
+
+.subtitle {
+  color: #FD9C2A;
+  
 }
 
 .to-scroll {
@@ -72,6 +92,7 @@ header ul a {
 }
 
 section {
+  font-family: 'Poppins';
   padding: 4em 2em;
   text-align: center;
 }
@@ -79,4 +100,38 @@ section {
 .shelters {
   position: relative;
 }
+
+.subtitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: .2em;
+  font-size: 1.3em;
+}
+
+.shelter-description, .bank-description  {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 3em;
+  font-size: 1.0em;
+  line-height: 1.8em;
+  font-weight: 500;
+}
+
+.shelter {
+  width: 60%;
+  height: auto;
+}
+
+.food {
+  width: 55%;
+  height: auto;
+}
+
+.plumbing {
+  width: 55%;
+  height: auto;
+}
+
+
 /*# sourceMappingURL=main.css.map */

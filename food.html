@@ -14,25 +14,24 @@
 <html>
 
 <head>
-  <title>Sushi Finder</title>
+  <title>Food</title>
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
   <meta charset="utf-8">
   <style>
     /* Always set the map height explicitly to define the size of the div
      * element that contains the map. */
     #map {
-      height: 400px;
-      width: 700px;
+      height: 100%;
       background-color: grey;
     }
 
-    /* Optional: Makes the sample page fill the window. 
+    /* Optional: Makes the sample page fill the window. */
     html,
     body {
       height: 100%;
       margin: 0;
       padding: 0;
-    }*/
+    }
 
     /* TODO: Step 4A1: Make a generic sidebar */
     /* Styling for an info pane that slides out from the left. 
@@ -113,7 +112,7 @@
           };
           map = new google.maps.Map(document.getElementById('map'), {
             center: pos,
-            zoom: 9
+            zoom: 15
           });
           bounds.extend(pos);
 
